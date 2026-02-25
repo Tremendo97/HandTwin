@@ -1,0 +1,68 @@
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.VC.db
+*.VC.opendb
+*.sln
+*.suo
+*.opensdf
+*.sdf
+
+# =========================
+# Compiled binaries / libraries
+# =========================
+*.obj
+*.o
+*.lo
+*.lib
+*.lai
+*.a
+*.dll
+*.so
+*.dylib
+*.exe
+*.app
+*.out
+*.ipa
+
+# =========================
+# Unreal Engine specific
+# =========================
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# Plugins
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Ignore precompiled headers
+*.pch
+*.gch
+
+# Ignore Visual Studio generated caches
+*.VC.db
+*.VC.opendb
+
+# Ignore temporary files
+*.log
+*.tmp
+*.cache
+*.pdb
+*.ipch
+*.obj
+*.opensdf
+
+# Ignore auto-generated config files
+Saved/*
+
+# Optionally ignore user preferences
+*.user
+*.userprefs
+
+# Keep only essential files
+!Content/**/Config/**.ini
+!Source/**/Config/**.ini
