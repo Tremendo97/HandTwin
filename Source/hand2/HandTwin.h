@@ -4,17 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "posiciones.h"
 #include "HandTwin.generated.h"
 
 //forward declaration de la estructura
-struct FPosiciones;
+//struct FPosiciones;
 
 UCLASS()
 class HAND2_API AHandTwin : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+public:
 	// Sets default values for this actor's properties
 	AHandTwin();
 	
@@ -26,7 +27,4 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
-	UFUNCTION(BlueprintCallable) 
-	TArray<uint8> StructureToBytes(const FPosiciones& pos);
 };

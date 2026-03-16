@@ -25,12 +25,3 @@ void AHandTwin::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-TArray<uint8> AHandTwin::StructureToBytes(const FPosiciones& pos)
-{
-    TArray<uint8> Bytes;
-    Bytes.SetNumUninitialized(sizeof(FPosiciones));
-    FMemory::Memcpy(Bytes.GetData(), &pos, sizeof(FPosiciones));
-    return Bytes;
-}
-
