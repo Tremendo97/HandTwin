@@ -16,4 +16,7 @@ class HAND2_API UFL_hand2 : public UBlueprintFunctionLibrary
 	
 	UFUNCTION(BlueprintCallable)
 	static TArray<uint8> StructureToBytes(const FPosiciones& Struct);
+
+	UFUNCTION(BlueprintCallable)
+	static bool EqualStructure(const FPosiciones& Struct1, const FPosiciones& Struct2 );
 };

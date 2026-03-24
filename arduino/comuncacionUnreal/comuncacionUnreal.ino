@@ -6,7 +6,8 @@ enum Dedo : uint32_t
   Corazon = 1,
   Anular = 2,
   Menique = 3,
-  Pulgar = 4
+  Pulgar = 4, 
+  Vacio = 5
 };
 
 struct posicion {

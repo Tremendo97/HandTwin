@@ -10,5 +10,6 @@ enum class EDedos : uint8
     Corazon = 1,
     Anular = 2,
     Menique = 3,
-    Pulgar = 4
+    Pulgar = 4,
+    Vacio = 5
 };
