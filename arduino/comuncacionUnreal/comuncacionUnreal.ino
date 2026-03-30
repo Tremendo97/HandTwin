@@ -48,8 +48,8 @@ class Hand{
       menique1.attach(7);
       menique2.attach(6);
 
-      // pulgar1.attach(5);
-      // pulgar2.attach(4);
+      pulgar1.attach(5);
+      pulgar2.attach(4);
 
       //colocar en la posicion por defecto
       corazon1.write(0);
@@ -64,8 +64,8 @@ class Hand{
       menique1.write(0);
       menique2.write(0);
 
-      // pulgar1.write(0);
-      // pulgar2.write(0);
+      pulgar1.write(0);
+      pulgar2.write(0);
     }
   public:
     void setPosition(posicion posiciones){
