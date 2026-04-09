@@ -48,8 +48,8 @@ class Hand{
       menique1.attach(7);
       menique2.attach(6);
 
-      pulgar1.attach(5);
-      pulgar2.attach(4);
+      pulgar1.attach(4);
+      pulgar2.attach(5);
 
       //colocar en la posicion por defecto
       corazon1.write(0);
@@ -111,8 +111,9 @@ void loop() {
     // Leemos los bytes directamente en la estructura
     Serial.readBytes((char*)&pos, sizeof(pos));
     hand.setPosition(pos);
-    Serial.println(pos.toString());
+    
   }
+  Serial.println(pos.toString());
 }
 
 
