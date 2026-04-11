@@ -87,6 +87,8 @@ class Hand{
           menique2.write(posiciones.pos2);
           break;
         case Pulgar:
+          pulgar1.write(posiciones.pos1);
+          pulgar2.write(posiciones.pos2);
           break;
       }
     }
