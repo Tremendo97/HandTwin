@@ -9,9 +9,6 @@ struct FPosiciones
 {
 	GENERATED_BODY()
 
-    /*UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    EFinger finger;*/
-
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     float posIndice1;
 

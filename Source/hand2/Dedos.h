@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "Dedos.generated.h"
 
-UENUM(BlueprintType, meta = (StructPacking = 1))
+UENUM(BlueprintType/*, meta = (StructPacking = 1)*/)
 enum class EDedos : uint8
 {
     Indice = 0,

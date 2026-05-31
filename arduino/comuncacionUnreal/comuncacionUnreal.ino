@@ -6,16 +6,18 @@ enum Dedo : uint32_t
   Corazon = 1,
   Anular = 2,
   Menique = 3,
-  Pulgar = 4, 
+  Pulgar = 4,
   Vacio = 5
 };
 
 struct posicion {
   float pos1;
+
   float pos2;
+
   Dedo dedo=Menique;
+  
   String toString() {
-    //necesita \0 ya que es el seprador que usa el plugin.
     return String(dedo) + ": " + String(pos1) + "," + String(pos2);
   }
 };
