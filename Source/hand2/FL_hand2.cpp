@@ -25,7 +25,7 @@ bool UFL_hand2::EqualStructure(const FPosiciones& posActual, const FPosiciones& 
         return false;
     }
 
-    if (posActual.dedo == posAnterior.dedo && posActual.posIndice1 == posAnterior.posIndice1 && posActual.posIndice2 == posAnterior.posIndice2) {
+    if (posActual.dedo == posAnterior.dedo && posActual.articulacion1 == posAnterior.articulacion1 && posActual.articulacion2 == posAnterior.articulacion2) {
         
         return true;
     }
@@ -124,29 +124,5 @@ TMap<int32, FString> UFL_hand2::getAvailablePorts()
         }
     }
 
-    //for (int i = 0; i < 255; i++) // checking ports from COM0 to COM255
-    //{
-    //    FString str = L"COM" + FString::FromInt(i); // converting to COM0, COM1, COM2
-
-    //    /*#if PLATFORM_WINDOWS
-    //        DWORD res = QueryDosDevice(*str, lpTargetPath, 5000);
-    //    #endif*/
-    //    
-    //    // handle equivale a una lista de puertos que estan connectados.
-    //    // Test the return value and error if any
-    //    if (devs != 0) //QueryDosDevice returns zero if it didn't find an object
-    //    {
-    //        //id arduino 2A03
-    //        
-
-
-    //        
-    //        //std::cout << str << ": " << lpTargetPath << std::endl;
-    //    }
-    //    if (devs == INVALID_HANDLE_VALUE)
-    //    {
-    //        UE_LOG(LogTemp, Error, TEXT("No se encunetra puertos serie validos"));
-    //    }
-    //}
     return portList;
 }

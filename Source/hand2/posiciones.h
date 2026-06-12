@@ -10,10 +10,10 @@ struct FPosiciones
 	GENERATED_BODY()
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    float posIndice1;
+    float articulacion1;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    float posIndice2;
+    float articulacion2;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     EDedos dedo;
