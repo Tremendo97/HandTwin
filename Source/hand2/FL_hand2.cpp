@@ -126,3 +126,7 @@ TMap<int32, FString> UFL_hand2::getAvailablePorts()
 
     return portList;
 }
+
+double UFL_hand2::getTiempoPreciso() {
+    return FPlatformTime::Seconds();
+}

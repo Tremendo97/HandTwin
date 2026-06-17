@@ -100,8 +100,9 @@ posicion pos;
 Hand hand;
 
 void setup() {
-
+  Serial.flush();
   Serial.begin(9600);
+  // Serial.begin(115200);
   Serial.setTimeout(1);
 
   delay(1000);
@@ -111,6 +112,18 @@ void setup() {
 }
 
 void loop() {
+  uint8_t buffer[sizeof(pos)];
+
+  // if (Serial.available() >= sizeof(pos)) {
+  //   Serial.readBytes((char*)buffer, sizeof(pos));
+
+  //   Serial.write(buffer, sizeof(buffer));
+
+  //   memcpy(&pos, buffer, sizeof(pos));
+
+  //   hand.setPosition(pos);
+  // }
+  
   if (Serial.available() >= sizeof(pos)) {
     // Leemos los bytes directamente en la estructura
     Serial.readBytes((char*)&pos, sizeof(pos));

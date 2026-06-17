@@ -18,16 +18,13 @@ void UGI_hand::createListenSocket() {
 	//FIPv4Address solo guarda la IP
 	FIPv4Address IPAddress(RawIP);
 	
-	//esta linea hacia un loopback para crear los shokets de forma local
+	//loopback para crear los shokets de forma local
 	//FIPv4Address::Parse(TEXT("127.0.0.1"), IPAddress);
 
 	FIPv4Endpoint Endpoint(IPAddress, 50000);
 
 	//FInternetAddr guarda tanto IP como puerto
 	ServerSocket->Bind(*Endpoint.ToInternetAddr());
-	
-
-	//TSharedRef< FInternetAddr > direccion = SocketSubsystem->GetLocalBindAddr(*GLog);
 
 	ServerSocket->Listen(1);
 }

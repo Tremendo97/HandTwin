@@ -22,6 +22,9 @@ class HAND2_API UFL_hand2 : public UBlueprintFunctionLibrary
 
     UFUNCTION(BlueprintCallable)
     static TMap<int32, FString> getAvailablePorts();
+
+	UFUNCTION(BlueprintCallable, Category = "Tiempo")
+	static double getTiempoPreciso();
 };
 
 
