@@ -17,4 +17,5 @@ This Bachelor's Thesis studies the current state of mechanical hands in conjunct
 This project aims to serve as a first step toward the remote control of more complex mechanical hands through the development of digital twins that provide real-time and accurate feedback on their state and position.
 
 **Memoria**
-[DiegoHernándezPérez-TFG.pdf](https://github.com/user-attachments/files/29175686/DiegoHernandezPerez-TFG.pdf)
+[DiegoHernándezPérez-TFG.pdf](https://github.com/user-attachments/files/29307168/DiegoHernandezPerez-TFG.pdf)
+
